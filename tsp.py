@@ -39,13 +39,20 @@ def nearest_neighbor(cities):
     return (path, path_distance)
 
 
+def write_results(filename, path, distance):
+    with open(filename, 'wb') as output:
+        output.write(str(distance) + '\n')
+        for input in path:
+            output.write(str(input[0]) + '\n')
+
+
 if __name__ == '__main__':
-    # input_file = str.argv[2]
-    input_file = 'test-input-7.txt'
+    input_file = str(sys.argv[1])
     output_file = input_file + '.tour'
 
     start = timer()
     cities = read_file(input_file)
-    print(nearest_neighbor(cities))
+    (path, path_distance) = nearest_neighbor(cities)
+    write_results(output_file, path, path_distance)
     end = timer()
     print('Time: %s seconds' % str(end - start))
