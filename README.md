@@ -30,7 +30,8 @@ To run the under 3 minutes competition problems:
 
 #### Solutions
 Our solutions are found in the /results folder and each folder includes tsp-verifier.py and TSPAllVisited.py for verification
-There are 3 sets of results:
- - one set for the example problems found in the /results/examples/ folder
- - one set for the unlimited competition problems found in the /results/comp-unlimited/ folder
- - one set for the under 3 minutes competition problems found in the /results/comp-under-3/ folder
+- Refer to the report pdf for reference to which algorithm was used for each solution
+- There are 3 sets of results:
+ 	- one set for the example problems found in the /results/examples/ folder
+ 	- one set for the unlimited competition problems found in the /results/comp-unlimited/ folder
+ 	- one set for the under 3 minutes competition problems found in the /results/comp-under-3/ folder
