@@ -40,12 +40,10 @@ def nearest_neighbor(cities):
 
 
 def repeated_nearest(cities):
-    if len(cities) <= 500:
-        iterations = len(cities)
-    elif len(cities) >= 5000:
-        iterations = 5
+    if len(cities) >= 5000:
+        iterations = 500
     else:
-        iterations = 50
+        iterations = len(cities)
     best_distance = float('inf')
     for i in range(0, iterations):
         unvisited = cities[:]
