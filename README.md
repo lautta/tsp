@@ -8,7 +8,7 @@
 
 #### To run the program:
 
-Usage: python mcc.py { nn || rnn || 2opt } { filename.txt }
+Usage: python tsp.py { nn || rnn || 2opt } { filename.txt }
 - For example, to run rnn algorithms on tsp_example_1.txt:
 	- run the command: 'python tsp.py rnn tsp_example_1.txt'
 - This will create a new .tour solution in the current directory each time
